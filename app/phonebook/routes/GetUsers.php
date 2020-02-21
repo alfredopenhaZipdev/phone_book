@@ -19,8 +19,10 @@ $database = new Database();
 $user = new User($database->getConnection());
 
 $user->id = $_GET['id'];
-$user->first_name = $_GET['last_name'];
+$user->first_name = $_GET['first_name'];
 $user->last_name = $_GET['last_name'];
+$user->emails = $_GET['email'];
+$user->phone_numbers = $_GET['phone_number'];
 $r = $user->get();
 
 $r = $r == false ? ['data' => []] : $r;
