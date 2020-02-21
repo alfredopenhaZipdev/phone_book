@@ -1,0 +1,27 @@
+{
+  "name": "Phone book",
+  "description": "API to handle a phone book",
+  "type": "api",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jesus Walker",
+      "email": "jesus.walker12@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/phonebook"
+    }
+  },
+  "require": {
+    "ext-json": "*",
+    "php": "^7",
+    "vlucas/phpdotenv": "^4.1"
+  },
+  "scripts": {
+    "refresh": {
+
+    }
+  }
+}
