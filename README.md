@@ -25,6 +25,7 @@ Once you have that ready you will only need to run the script inside a console t
 ## API Reference
 
 We are also including a postman collection in the root of the project, you just use the import option and it will be ready.
+(phonebook.postman_collection.json)
 
 {main_route} = app/Phonebook/Routes/
 

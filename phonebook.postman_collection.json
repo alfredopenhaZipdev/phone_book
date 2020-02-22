@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "54ca43b7-404c-4387-9e0d-4eece5e5ee97",
+		"name": "phonebook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8089/app/phonebook/routes/GetUsers.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"app",
+						"phonebook",
+						"routes",
+						"GetUsers.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "Emma",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Stone",
+							"type": "text"
+						},
+						{
+							"key": "emails[0]",
+							"value": "emma.stone@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "emails[1]",
+							"value": "emma.stone@yahoo.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_numbers[0]",
+							"value": "5432132120",
+							"type": "text"
+						},
+						{
+							"key": "phone_numbers[1]",
+							"value": "10937893212",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8089/app/phonebook/routes/CreateUser.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"app",
+						"phonebook",
+						"routes",
+						"CreateUser.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8089/app/phonebook/routes/DeleteUser.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"app",
+						"phonebook",
+						"routes",
+						"DeleteUser.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "first_name",
+							"value": "Paul",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "Walker",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8089/app/phonebook/routes/UpdateUser.php",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"app",
+						"phonebook",
+						"routes",
+						"UpdateUser.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
