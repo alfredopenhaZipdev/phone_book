@@ -21,10 +21,10 @@ class Database
 
     public function __construct()
     {
-        $this->host = getenv('DOCKER_DB_HOST');
-        $this->db = getenv('DOCKER_DB_DATABASE');
-        $this->user = getenv('DOCKER_DB_USER');
-        $this->password = getenv('DOCKER_DB_PASSWORD');
+        $this->host = getenv('DB_HOST');
+        $this->db = getenv('DB_DATABASE');
+        $this->user = getenv('DB_USER');
+        $this->password = getenv('DB_PASSWORD');
     }
 
     /**

@@ -29,7 +29,7 @@ services:
     image: mysql:8.0
     restart: always
     ports:
-    - ${DOCKER_MYSQL_PORT}:3306
+    - ${DOCKER_DB_PORT}:3306
     volumes:
     - mysql-data:/data/mysql/db
     environment:
